@@ -1,6 +1,6 @@
 # mcp-censys
 
-> mcp-censys is a conversational MCP server that taps into the Censys Search API for real-time domain, IP, and FQDN reconnaissance. Just ask.
+> mcp-censys is a MCP server that taps into the Censys Search API for real-time domain, IP, and FQDN reconnaissance.
 
 > [!CAUTION]
 > This is intended solely as a demonstration and is not production-ready. It is not an officially supported product.
@@ -141,15 +141,19 @@ Add this to your Claude Desktop config:
 ```
 ## Screenshot
 
-mcp-censys in action via Claude Desktop, using the `lookup_domain` and `lookup_ip` tools:
+mcp-censys in action via Claude Desktop, using the `lookup_domain`, `lookup_domain_detailed` and `lookup_ip` tools:
 
 ![mcp-censys Screenshot - Domain/FQDN lookup](docs/mcp-censys-screenshot-01.png)
 
 > This example shows a domain lookup request on `mailchimp.com`, returning IPs, ASN, subdomains, services and infrastructure — all from a natural language query.
 
-![mcp-censys Screenshot - IP lookup](docs/mcp-censys-screenshot-02.png)
+![mcp-censys Screenshot - Detailed Domai lookup](docs/mcp-censys-screenshot-02.png)
 
-> This example demonstrates an IP lookup on `142.250.68.100`, including TLS config, headers, CDN, and security observations.
+> This example shows a detailed domain lookup request on `mailchimp.com`, returning IPs, ASN, subdomains, BGP, TLS, information, services and infrastructure.
+
+![mcp-censys Screenshot - IP lookup](docs/mcp-censys-screenshot-03.png)
+
+> This example demonstrates an IP lookup on `23.204.1.14`, returning coordinates, forward and reverse DNS and services.
 
 ## Troubleshooting
 **No Results Returned**:
