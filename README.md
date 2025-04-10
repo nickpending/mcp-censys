@@ -1,6 +1,6 @@
 # mcp-censys
 
-> mcp-censys is a MCP server that taps into the Censys Search API for real-time domain, IP, and FQDN reconnaissance.
+> mcp-censys is a MCP server that taps into the Censys Search API for real-time domain, IP, and FQDN reconnaissance, now with enhanced **MCP Prompt Templates**.
 
 > [!CAUTION]
 > This is intended solely as a demonstration and is not production-ready. It is not an officially supported product.
@@ -11,19 +11,24 @@ mcp-censys turns natural language prompts into targeted Censys queries — surfa
 
 Built on the official Censys Python SDK, this lightweight container exposes precise reconnaissance tools through Claude-friendly functions.
 
+> [!NEW] **MCP Prompt Templates**
+> 
+> This version introduces **MCP Prompt Templates** - predefined instruction sets that guide Claude's analysis of domain data. These templates provide structured guidance on how to organize and present the findings, ensuring consistent, high-quality outputs. [Learn more about MCP Prompts](https://modelcontextprotocol.io/docs/concepts/prompts).
+
 ## Features
 
 - **Conversational Queries**: Natural language access to Censys intel
 - **Domain and IP Lookup**: Get DNS names, ASN, services, and TLS context
 - **New FQDN Discovery**: Find recently seen subdomains from DNS and cert data
 - **MCP-Compatible Tools**: Use directly from Claude Desktop
+- **MCP Prompt Templates**: ✨ Built-in structured guidance templates that instruct Claude exactly how to analyze and present domain data ([learn more about MCP Prompts](https://modelcontextprotocol.io/docs/concepts/prompts))
 - **Dockerized with .env support**: Secure, repeatable usage
 - **Lightweight API Client**: Based on Censys Python SDK
 
 ## Tools
 
-- **lookup_domain** - Get comprehensive IPs, DNS names, services, and ASN info for a domain (aggregates data across all results)
-- **lookup_domain_detailed** - Return a sample of 3 individual host records with services, ASN, geo, and TLS data, along with information about total available records
+- **lookup_domain** - Get comprehensive IPs, DNS names, services, and ASN info for a domain (aggregates data across all results) with **built-in MCP prompts** that guide Claude to organize findings into meaningful sections
+- **lookup_domain_detailed** - Return a sample of 3 individual host records with services, ASN, geo, and TLS data, along with information about total available records and **structured MCP prompts** for comprehensive infrastructure analysis
 - **lookup_ip** - Enrich an IP with DNS, ASN, service info, and TLS metadata
 - **new_fqdns** - Find recently observed FQDNs for a domain (via DNS and certs)
 - **host_services** - List open ports and service banners for a given domain or IP

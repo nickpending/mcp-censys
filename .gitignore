@@ -1,0 +1,145 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.env
+.venv
+.env.*
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Logs and Data
+*.log
+logs/
+test_data/
+sample_data/
+honeypot_data/
+*.pcap
+*.csv
+*.json
+!tests/fixtures/*.json
+!tests/fixtures/*.yaml
+
+# Security and Secrets
+*.pem
+*.key
+*.cert
+*.crt
+.env*
+secrets/
+credentials/
+*.token
+*.secret
+
+# Project specific
+results/
+analysis_output/
+temp/
+cache/
+*.dump
+*.rdb
+
+# Documentation
+docs/_build/
+site/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+!examples/*.ipynb
+
+# Operating System
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+*~.nib
+desktop.ini
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Distribution / packaging
+.Python
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+nosetests.xml
+coverage.xml
+*.cover
+.coverage.*
+.cache
+coverage/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Rope project settings
+.ropeproject
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
